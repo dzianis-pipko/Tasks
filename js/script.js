@@ -8,11 +8,17 @@
 // let ourPlanetName = "Планета Земля";
 // let currentUserName = "Дэйв";
 
-// 1)
+
+
+
+// 1)Задание
 // let num = 3;
 // console.log(num);
 
-// 2)
+
+
+
+// 2)Задание
 // let a = 10;
 // let b = 2;
 // console.log(a + b);
@@ -20,19 +26,29 @@
 // console.log(a * b);
 // console.log(a / b);
 
-// 3)
+
+
+
+// 3)Задание
 // let c = 15;
 // let d = 2;
 // let result = c + d;
 // console.log(result);
 
-// 4)
+
+
+
+
+// 4)Задание
 // let a = 10;
 // let b = 2;
 // let c = 5;
 // console.log(a + b + c);
 
-// 5)
+
+
+
+// 5)Задание
 // let a = 17;
 // let b = 10;
 // let c = a - b;
@@ -60,6 +76,11 @@
 
 // value = String(value);
 // console.log(typeof value);
+
+
+
+
+
 
 // ===== Условные операторы: if, '?' ===== 
 
@@ -109,7 +130,11 @@
 //    (login == '') ? 'Нет логина' :
 //    '';
 
-// 1)
+
+
+
+
+// 1)Задание
 // let test = prompt('Введите любое значение', '');
 // test = +test;
 
@@ -119,7 +144,11 @@
 //    alert('Неверно');
 // }
 
-// 2)
+
+
+
+
+// 2)Задание
 // let test = prompt('Введите любое значение', '');
 // test = +test;
 
@@ -128,6 +157,11 @@
 // } else {
 //    alert('Неверно');
 // }
+
+
+
+
+
 
 
 // ===== Логические операторы ===== 
@@ -175,7 +209,9 @@
 
 
 
-// 1)
+
+
+// 1)Задание
 // let a = prompt('число', '');
 
 // if (a > 0 && a < 5) {
@@ -184,7 +220,10 @@
 //    alert('Не верно');
 // }
 
-// 2)
+
+
+
+// 2)Задание
 // let a = prompt('число', '');
 
 // if (a == 0 || a == 2) {
@@ -195,7 +234,10 @@
 
 // console.log(a);
 
-// 3)
+
+
+
+// 3)Задание
 // let a = prompt('число', '3');
 // let b = prompt('число', '5');
 
@@ -205,7 +247,9 @@
 //    alert(a - b);
 // }
 
-// 4)
+
+
+// 4)Задание
 // let a = prompt('число', '1');
 // let b = prompt('число', '15');
 
@@ -214,6 +258,11 @@
 // } else {
 //    alert('Не верно');
 // }
+
+
+
+
+
 
 // ===== Циклы =====
 
@@ -237,7 +286,7 @@
 // } while (num <= 100 && num);
 
 
-// 1)
+// 1)Задание
 // let a = 1;
 
 // while (a <= 100) {
@@ -245,7 +294,9 @@
 //    a++;
 // }
 
-// 2)
+
+
+// 2)Задание
 // let a = 11;
 
 // while (a <= 33) {
@@ -253,7 +304,9 @@
 //    a++;
 // }
 
-// 3)
+
+
+// 3)Задание
 // let i = 0;
 
 // while (i <= 100) {
@@ -263,7 +316,9 @@
 //    i++;
 // }
 
-// 4)
+
+
+// 4)Задание
 // let i = 1;
 // let a = 0;
 
@@ -273,30 +328,48 @@
 // }
 // console.log(a);
 
-// 1)
+
+
+
+// 1)Задание
 // for (let i = 1; i <= 100; i++) {
 //    console.log(i);
 // }
 
-// 2)
+
+
+
+// 2)Задание
 // for (let i = 11; i <= 33; i++) {
 //    console.log(i);
 // }
 
-// 3)
+
+
+
+
+// 3)Задание
 // for (let i = 0; i <= 100; i++) {
 //    if (i % 2 == 0) {
 //       console.log(i);
 //    }
 // }
 
-// 4)
+
+
+
+// 4)Задание
 // let a = 0;
 
 // for (let i = 1; i <= 100; i++) {
 //    a += i;
 // }
 // console.log(a);
+
+
+
+
+
 
 // ===== Конструкция "switch" =====
 
@@ -356,7 +429,10 @@
 //       alert('Что то не то');
 // }
 
-// 1)
+
+
+
+// 1)Задание
 // let num = prompt('Введите значение', '');
 // let result;
 
@@ -384,6 +460,8 @@
 // alert(result);
 
 // ===== Функции =====
+
+
 // function checkAge(age) {
 //    return (age > 18) ? true : confirm('Родители разрешили?');
 // }
@@ -421,6 +499,9 @@
 //    return result;
 // }
 
+
+
+
 // let x = prompt('Введите число X', '');
 // let n = prompt('Введите число N', '');
 
@@ -434,6 +515,8 @@
 // alert(result);
 
 
+
+
 // function pow(x, n) {
 //    let result = x;
 
@@ -444,6 +527,8 @@
 //    return result;
 // }
 
+
+
 // let x = prompt("x?", '');
 // let n = prompt("n?", '');
 
@@ -453,6 +538,8 @@
 //    alert(pow(x, n));
 // }
 
+
+
 // ask(
 //    "Вы согласны?",
 //    () => alert("Вы согласились."),
@@ -460,5 +547,138 @@
 // );
 //
 
-// ====
+
+
 // ===== Обьекты =====
+
+
+
+// let user = {
+//    name: 'John',
+//    surname: 'Smith'
+// };
+
+// user.name = 'Pete';
+// console.log(user.name);
+
+// delete user.name;
+// console.log(user.name);
+
+// for (let key in user) {
+//    console.log(key);
+// }
+
+
+
+
+// let schedule = {
+//    a: 6
+// };
+
+// function isEmpty(schedule) {
+//    for (let key in schedule) {
+//       return false;
+//    }
+//    return true;
+// }
+// console.log(isEmpty(schedule));
+
+
+
+
+// let salaries = {
+//    John: 100,
+//    Ann: 160,
+//    Pete: 130
+// };
+
+// let sum = 0;
+// for (let key in salaries) {
+//    sum += salaries[key];
+// }
+
+// console.log(sum);
+
+
+
+
+// let menu = {
+//    width: 200,
+//    height: 300,
+//    title: "My menu"
+// };
+
+
+
+// function multiplyNumeric(obj) {
+//    for (let key in obj) {
+//       if (typeof obj[key] == 'number') {
+//          obj[key] = obj[key] * 2;
+//       }
+//    }
+
+// }
+
+// multiplyNumeric(menu);
+// console.log(menu);
+
+
+
+
+// 1)Задание
+
+// let obj = {
+//    a: 1,
+//    b: 2,
+//    c: 3
+// };
+// console.log(obj.c);
+// console.log(obj['c']);
+
+
+
+// 2)Задание
+
+// let obj = {
+//    Коля: '1000',
+//    Вася: '500',
+//    Петя: '200'
+// };
+// console.log(obj.Коля, obj.Петя);
+
+
+
+// 3)Задание
+
+// let daysOfTheWeek = {
+//    1: 'Monday',
+//    2: 'Tuesday',
+//    3: 'Wednesday',
+//    4: 'Thursday',
+//    5: 'Friday',
+//    6: 'Saturday',
+//    7: 'Sunday'
+// };
+
+// console.log(daysOfTheWeek['2']);
+
+
+
+// 
+// 4)Задание
+
+let daysOfTheWeek = {
+   1: 'Monday',
+   2: 'Tuesday',
+   3: 'Wednesday',
+   4: 'Thursday',
+   5: 'Friday',
+   6: 'Saturday',
+   7: 'Sunday'
+};
+let day = 2;
+for (let key in daysOfTheWeek) {
+   if (day == key) {
+      console.log(daysOfTheWeek[key]);
+   }
+}
