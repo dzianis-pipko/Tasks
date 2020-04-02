@@ -667,18 +667,194 @@
 // 
 // 4)Задание
 
-let daysOfTheWeek = {
-   1: 'Monday',
-   2: 'Tuesday',
-   3: 'Wednesday',
-   4: 'Thursday',
-   5: 'Friday',
-   6: 'Saturday',
-   7: 'Sunday'
-};
-let day = 2;
-for (let key in daysOfTheWeek) {
-   if (day == key) {
-      console.log(daysOfTheWeek[key]);
-   }
-}
+// let daysOfTheWeek = {
+//    1: 'Monday',
+//    2: 'Tuesday',
+//    3: 'Wednesday',
+//    4: 'Thursday',
+//    5: 'Friday',
+//    6: 'Saturday',
+//    7: 'Sunday'
+// };
+// let day = 2;
+// for (let key in daysOfTheWeek) {
+//    if (day == key) {
+//       console.log(daysOfTheWeek[key]);
+//    }
+// }
+
+
+
+
+// ===== Методы объекта, "this" =====
+
+// let calculator = {
+//    a: null,
+//    b: null,
+//    read() {
+//       this.a = +prompt('a', '0');
+//       this.b = +prompt('b', '0');
+//    },
+
+//    sum() {
+//       return this.a + this.b;
+
+//    },
+
+//    mul() {
+//       return this.a * this.b;
+
+//    }
+// };
+
+// calculator.read();
+// alert(calculator.sum());
+// alert(calculator.mul());
+
+
+
+
+
+// let ladder = {
+//    step: 0,
+//    up() {
+//       this.step++;
+//       return this;
+//    },
+//    up2() {
+//       this.step--;
+//       return this;
+//    },
+//    up3() {
+//       alert(this.step);
+//       return this;
+//    }
+// };
+
+// ladder.up().up().up().up2().up3();
+
+
+
+// ===== Методы объекта, "this" =====
+
+
+// function BigUser() {
+//    this.name = "Vasa";
+
+//    return {
+//       name: "gdzilla"
+//    };
+// }
+
+// alert(new BigUser().name);
+
+
+
+
+
+// function Calculator() {
+//    this.read = function () {
+//       this.a = +prompt("a?", "0");
+//       this.b = +prompt("a?", "0");
+//    };
+
+//    this.sum = function () {
+//       return this.a + this.b;
+//    };
+
+//    this.mul = function () {
+//       return this.a * this.b;
+//    };
+// }
+
+// let calculator = new Calculator();
+// calculator.read();
+
+// alert("Sum=" + calculator.sum());
+// alert("Mul=" + calculator.mul());
+
+
+
+
+// function Accumulator(startingValue) {
+//    this.value = startingValue;
+
+//    this.read = function () {
+//       this.a = +prompt("a?", "0");
+//       this.value = (this.value + this.a);
+//       return this.value;
+//    };
+// }
+
+// let accumulator = new Accumulator(1);
+
+// accumulator.read();
+// accumulator.read();
+// accumulator.read();
+// accumulator.read();
+
+// alert(accumulator.value);
+
+
+
+
+// ===== Числа =====
+
+
+
+// let a = +prompt('a?', '0');
+// let b = +prompt('b?', '0');
+// let sum = a + b;
+// alert(sum);
+
+
+
+// alert(Math.round(6.35 * 10) / 10);
+
+
+
+// function readnumber() {
+//    let a = +prompt("?", '0');
+//    if (a == null || a == 0) {
+//       return alert('null');
+//    } else {
+//       return alert(a);
+//    }
+// }
+// readnumber();
+
+
+
+// function readNumber() {
+//    let num;
+
+//    do {
+//       num = prompt("?", "0");
+//    } while (!isFinite(num));
+
+//    if (num === null || num === '') return null;
+
+//    return +num;
+// }
+
+// alert(readNumber());
+
+
+
+// function random(min, max) {
+//    return min + Math.random() * (max - min);
+
+// }
+// alert(random(1, 5));
+// alert(random(1, 5));
+// alert(random(1, 5));
+
+
+
+// function randomInteger(min, max) {
+//    return min + Math.random() * (max - min);
+
+// }
+// alert(randomInteger(1, 5));
+// alert(randomInteger(1, 5));
+// alert(randomInteger(1, 5));
