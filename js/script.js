@@ -858,3 +858,59 @@
 // alert(randomInteger(1, 5));
 // alert(randomInteger(1, 5));
 // alert(randomInteger(1, 5));
+
+
+
+// ===== Строки =====
+
+// function ucFirst(str) {
+//    str = 'В' + str.substring(1, 4);
+//    return alert(str);
+
+// }
+// ucFirst("вася");
+
+// function ucFirst(str) {
+//    if (!str) return str;
+
+//    return str[0].toUpperCase() + str.slice(1);
+// }
+// alert(ucFirst("вася"));
+
+
+
+
+// function checkSpam(str) {
+//    if (!str.indexOf('viagra') || !str.indexOf('XXX')) {
+//       return false;
+//    } else {
+//       return true;
+//    }
+
+// }
+
+// alert(checkSpam("viagra"));
+
+// function checkSpam(str) {
+//    let saveStr = str.toLowerCase();
+
+//    return saveStr.includes('viagra') || saveStr.includes('xxx');
+// }
+
+// alert(checkSpam("innocent rabbit"));
+
+
+
+// function truncate(str, maxlength) {
+//    return (str.length > maxlength) ? str.slice(0, maxlength - 1) + '…' : str;
+// }
+// alert(truncate("Вот, что мне хотелось бы сказать на эту тему:", 20));
+// alert(truncate("Всем привет!", 20));
+
+
+
+// function extractCurrencyValue(str) {
+//    return +str.slice(1);
+
+// }
+// alert(extractCurrencyValue('$120'));
