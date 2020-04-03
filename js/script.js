@@ -914,3 +914,51 @@
 
 // }
 // alert(extractCurrencyValue('$120'));
+
+
+
+// ===== Массивы =====
+
+// let styles = ['Джаз', 'Блюз'];
+
+// styles.push('Рок-н-ролл');
+// alert(styles);
+
+// styles[Math.floor((styles.length - 1) / 2)] = 'Классика';
+// alert(styles);
+
+// styles.shift();
+// alert(styles);
+
+// styles.unshift('Рэп', 'Регги');
+// alert(styles);
+
+
+// function sumInput() {
+
+//    let mass = [];
+//    do {
+//       let a = +prompt('?', '0');
+//       mass.push(a);
+//    } while (a === null || a === '');
+// }
+// alert(sumInput());
+// alert(mass);
+
+
+// function sumInput() {
+//    let numbers = [];
+
+//    while (true) {
+//       let num = prompt("dddddddd", 0);
+//       if (num === '' || num === null || !isFinite(num)) break;
+//       numbers.push(+num);
+//    }
+//    let sum = 0;
+//    for (let summ of numbers) {
+//       sum += summ;
+//    }
+//    return sum;
+// }
+
+// alert(sumInput());
