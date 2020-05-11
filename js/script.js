@@ -962,3 +962,881 @@
 // }
 
 // alert(sumInput());
+
+
+
+// ===== Методы Массивов =====
+
+// function camelize(str) {
+
+//    return str.split('-')
+//       .map((item, index) => index == 0 ? item : item[0].toUpperCase() + item.slice(1)).join('');
+
+// }
+
+// alert(camelize("background-color"));
+// alert(camelize("list-style-image"));
+// alert(camelize("-webkit-transition"));
+
+
+
+// function filterRange(arr, a, b) {
+//    let mass = arr.slice(a, b);
+//    return mass;
+// }
+
+// let arr = [5, 3, 8, 1];
+// let filtered = filterRange(arr, 1, -1);
+// alert(filtered);
+// alert(arr);
+
+
+// function filterRange(arr, a, b) {
+//    return arr.filter(item => (a <= item && item <= b));
+// }
+// let arr = [5, 3, 8, 1];
+// let filtered = filterRange(arr, 1, 4);
+// alert(filtered);
+// alert(arr);
+
+
+
+// function filterRangeInPlace(arr, a, b) {
+//    for (let i = 0; i < arr.length; i++) {
+//       let num = arr[i];
+//       if (num < a || num > b) {
+//          arr.splice(i, 1);
+//       }
+//    }
+// }
+// let arr = [5, 3, 8, 1];
+// filterRangeInPlace(arr, 1, 4);
+// alert(arr);
+
+
+// let arr = [5, 2, 1, -10, 8];
+// arr.sort((a, b) => a - b);
+// arr.reverse();
+// alert(arr);
+
+
+
+
+// let arr = ["HTML", "JavaScript", "CSS"];
+// function copySorted(arr) {
+//    arr.slice();
+//    let numm = arr.splice(0, 3, "CSS", "HTML", "JavaScript");
+//    return numm;
+// }
+// let sorted = copySorted(arr);
+// alert(sorted);
+// alert(arr);
+
+
+
+// function copySorted(arr) {
+//    return arr.slice().sort();
+// }
+// let arr = ["HTML", "JavaScript", "CSS"];
+// let sorted = copySorted(arr);
+// alert(sorted);
+// alert(arr);
+
+
+// function Calculator() {
+
+
+//    alert(calc.calculate("3 + 7"));
+// }
+// let calc = new Calculator;
+// Calculator();
+
+// let vasya = {
+//    name: "Вася",
+//    age: 25
+// };
+// let petya = {
+//    name: "Петя",
+//    age: 30
+// };
+// let masha = {
+//    name: "Маша",
+//    age: 28
+// };
+
+// let users = [vasya, petya, masha];
+
+// let names = users.map(item => item.name);
+
+// alert(names);
+
+
+
+
+
+// let vasya = {
+//    name: "Вася",
+//    surname: "Пупкин",
+//    id: 1
+// };
+// let petya = {
+//    name: "Петя",
+//    surname: "Иванов",
+//    id: 2
+// };
+// let masha = {
+//    name: "Маша",
+//    surname: "Петрова",
+//    id: 3
+// };
+
+// let users = [vasya, petya, masha];
+
+// let usersMapped = users.map(users => ({
+//    fullName: `${users.name} ${users.surname}`,
+//    id: users.id
+// }));
+
+
+// alert(usersMapped[0].id);
+// alert(usersMapped[0].fullName);
+
+
+
+
+// function sortByAge(arr) {
+//    arr.sort((a, b) => a.age > b.age ? 1 : -1);
+// }
+
+// let vasya = {
+//    name: "Вася",
+//    age: 25
+// };
+// let petya = {
+//    name: "Петя",
+//    age: 30
+// };
+// let masha = {
+//    name: "Маша",
+//    age: 28
+// };
+
+// let arr = [vasya, petya, masha];
+
+// sortByAge(arr);
+
+// alert(arr[0].name);
+// alert(arr[1].name);
+// alert(arr[2].name);
+
+
+
+// let arr = ['Сабака', 'кошка', 'мышка'];
+
+
+
+// function camelize(str) {
+//    return str.split('-').map((item, index) => index == 0 ? item : item[0].toUpperCase() + item.slice(1)).join('');
+// }
+
+// alert(camelize("background-color"));
+// alert(camelize("list-style-image"));
+// alert(camelize("-webkit-transition"));
+
+
+// let arr = [5, 3, 8, 1];
+
+// function filterRange(arr, a, b) {
+//    return arr.filter(item => (item >= a && item <= b));
+// }
+// let filtered = filterRange(arr, 1, 4);
+// alert(filtered);
+// alert(arr);
+
+
+
+
+// function filterRangeInPlace(arr, a, b) {
+//    return arr.filter((item, index) => (a <= item && item <= b) ? item : arr.splice(index, 1));
+// }
+// let arr = [5, 3, 8, 1];
+// filterRangeInPlace(arr, 1, 4);
+// alert(arr);
+
+
+
+// let arr = [5, 2, 1, -10, 8];
+// arr.sort((a, b) => a - b).reverse();
+// alert(arr);
+
+
+// function copySorted(arr) {
+//    return arr.slice().sort();
+// }
+
+// let arr = ["HTML", "JavaScript", "CSS"];
+// let sorted = copySorted(arr);
+// alert(sorted);
+// alert(arr);
+
+
+
+
+// let vasya = {
+//    name: "Вася",
+//    age: 25
+// };
+// let petya = {
+//    name: "Петя",
+//    age: 30
+// };
+// let masha = {
+//    name: "Маша",
+//    age: 28
+// };
+
+// let users = [vasya, petya, masha];
+
+// let names = users.map(item => item.name);
+
+// alert(names);
+
+
+
+
+// let vasya = {
+//    name: "Вася",
+//    surname: "Пупкин",
+//    id: 1
+// };
+// let petya = {
+//    name: "Петя",
+//    surname: "Иванов",
+//    id: 2
+// };
+// let masha = {
+//    name: "Маша",
+//    surname: "Петрова",
+//    id: 3
+// };
+
+// let users = [vasya, petya, masha];
+
+// let usersMapped = users.map(item => ({
+//    fullName: `${item.name} ${item.surname}`,
+//    id: item.id
+// }));
+
+// alert(usersMapped[1].id);
+// alert(usersMapped[1].fullName);
+
+
+
+// function sortByAge(users) {
+
+//    return arr.sort((a, b) => a.age > b.age ? 1 : -1);
+
+// }
+
+// let vasya = {
+//    name: "Вася",
+//    age: 25
+// };
+// let petya = {
+//    name: "Петя",
+//    age: 30
+// };
+// let masha = {
+//    name: "Маша",
+//    age: 28
+// };
+// let arr = [vasya, petya, masha];
+// sortByAge(arr);
+// alert(arr[0].name);
+// alert(arr[1].name); 
+// alert(arr[2].name); 
+
+
+
+// function getAverageAge(users) {
+//    return arr.reduce((defoult, item) => defoult + item.age, 0) / arr.length;
+// }
+// let vasya = {
+//    name: "Вася",
+//    age: 25
+// };
+// let petya = {
+//    name: "Петя",
+//    age: 30
+// };
+// let masha = {
+//    name: "Маша",
+//    age: 29
+// };
+
+// let arr = [vasya, petya, masha];
+
+// alert(getAverageAge(arr));
+
+
+
+// function unique(arr) {
+
+//    let result = [];
+
+//    for (let age of arr) {
+//       if (!result.includes(age)) {
+//          result.push(age);
+//       }
+//    }
+//    return result;
+// }
+// let strings = ["кришна", "кришна", "харе", "харе",
+//    "харе", "харе", "кришна", "кришна", ":-O"
+// ];
+
+// alert(unique(strings)); // кришна, харе, :-O
+
+// function Calculator() {
+
+//    this.read = function () {
+//       this.a = +prompt('введите число a', '0');
+//       this.b = +prompt('введите число b', '0');
+//    };
+//    this.sum = function () {
+//       return this.a + this.b;
+//    };
+//    this.mul = function () {
+//       return this.a * this.b;
+//    };
+// }
+
+// let calculator = new Calculator();
+// calculator.read();
+
+// alert("Sum=" + calculator.sum());
+// alert("Mul=" + calculator.mul());
+
+
+
+// function unique(arr) {
+//    return Array.from(new Set(arr));
+// }
+
+// let values = ["Hare", "Krishna", "Hare", "Krishna",
+//    "Krishna", "Krishna", "Hare", "Hare", ":-O"
+// ];
+
+// alert(unique(values)); // Hare, Krishna, :-O
+
+
+
+
+// function aclean(arr){
+
+// }
+// let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
+// alert( aclean(arr) ); // "nap,teachers,ear" or "PAN,cheaters,era"
+
+
+
+
+
+
+// function Accumulator(startingValue) {
+//    this.value = startingValue;
+
+//    this.read = function () {
+//       this.value += +prompt('введите значение', '0');
+//    };
+// }
+
+// let accumulator = new Accumulator(1); // начальное значение 1
+
+// accumulator.read(); // прибавит ввод prompt к текущему значению
+// accumulator.read(); // прибавит ввод prompt к текущему значению
+
+// alert(accumulator.value); // выведет сумму этих значений
+
+
+
+// let calculator = {
+//    a: 0,
+//    b: 0,
+//    read() {
+//       this.a = +prompt('введите значение a', '0');
+//       this.b = +prompt('введите значение b', '0');
+//    },
+//    sum() {
+//       return this.a + this.b;
+//    },
+//    mul() {
+//       return this.a * this.b;
+//    }
+// };
+
+// calculator.read();
+// alert(calculator.sum());
+// alert(calculator.mul());
+
+
+
+
+
+
+
+
+
+
+
+// let arr = {};
+
+// alert(Array.isArray(arr));
+
+
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let result = arr.reduceRight(function (arr, current) {
+//    return arr + current;
+// }, 16);
+
+// alert(result);
+
+
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let result = arr.reduce((sum, current) => sum + current, 1);
+
+// alert(result);
+
+// let aaar = [1, 2, 15];
+
+// aaar.sort(function (a, b) {
+//    return a - b;
+// });
+// alert(aaar);
+
+
+// let users = [{
+//       id: 1,
+//       name: 'Вася'
+//    },
+//    {
+//       id: 2,
+//       name: 'Петя'
+//    },
+//    {
+//       id: 3,
+//       name: 'Вася'
+//    }
+// ];
+
+// let user = users.filter(item => item.name === 'Вася');
+// let result;
+// for (let f of user) {
+//    result = f + f;
+// }
+// alert(result);
+
+
+
+
+// let users = [{
+//       id: 1,
+//       name: 'Вася'
+//    },
+//    {
+//       id: 2,
+//       name: 'Петя'
+//    },
+//    {
+//       id: 3,
+//       name: 'Маша'
+//    }
+// ];
+
+// let user = users.findIndex(item => item.id === 3);
+
+// alert(user);
+
+// let del = ['Сабака', 'кошка', 'мышка'];
+// del.forEach((item, index, array) => {
+//    alert(`${item}  имеет позицию  ${index} в ${array}`);
+// });
+
+// let del = arr.slice(1, 2);
+// alert(arr);
+// alert(del);
+
+// arr.splice(1, 1, 'щенок');
+
+// let del = arr.splice(1, 1, 'щенок');
+
+// let del = arr.slice(-2);
+// let copy = arr.slice();
+// let del = ['e', 'd', 'a', 55];
+
+// alert(copy.concat([1, 2, 3], 1, [3, 4, 5], del));
+// alert(arr);
+
+
+
+
+// ===== Map и Set =====
+
+
+
+// function unique(arr) {
+//    return Array.from(new Set(arr));
+// }
+// let values = ["Hare", "Krishna", "Hare", "Krishna",
+//    "Krishna", "Krishna", "Hare", "Hare", ":-O"
+// ];
+// alert(unique(values));
+
+
+
+
+
+// let map = new Map();
+// map.set("name", "John");
+// let keys = Array.from(map.keys());
+// keys.push("more");
+// alert(keys);
+
+
+
+
+// ===== Object.keys, values, entries =====
+
+
+
+// function sumSalaries(salaries) {
+//    let value = 0;
+//    for (let summ of Object.values(salaries)) {
+//       value += summ;
+//    }
+//    return value;
+
+// }
+// let salaries = {
+//    "John": 100,
+//    "Pete": 300,
+//    "Mary": 250
+// };
+// alert(sumSalaries(salaries));
+
+
+
+
+// function count(obj) {
+//    return Object.keys(obj).length;
+//  }
+// let user = {
+//    name: 'John',
+//    age: 30
+//  };
+//  alert( count(user) );
+
+
+
+// ===== Object.keys, values, entries =====
+
+
+
+// let user = {
+//    name: "John",
+//    years: 30
+// };
+
+// let {
+//    name,
+//    years: age,
+//    isAdmin = false
+// } = user;
+
+// alert(name);
+// alert(age);
+// alert(isAdmin);
+
+
+
+
+// ===== Дата и время =====
+
+
+
+// ===== Формат JSON, метод toJSON =====
+
+
+// let user = {
+//    name: "Василий Иванович",
+//    age: 35
+// };
+
+// let usetTwo = JSON.stringify(user);
+// alert(usetTwo);
+
+
+
+
+
+// ===== Замыкание =====
+
+
+
+// function inBetween(a, b) {
+//    return function(x) {
+//      return x >= a && x <= b;
+//    };
+//  }
+
+
+// function inArray(arr){
+//    return function(x){
+//       return arr.includes(x);
+//    };
+// }
+
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+
+// alert(arr.filter(inBetween(3, 6))); // 3,4,5,6
+
+// alert(arr.filter(inArray([1, 2, 10]))); // 1,2
+
+
+
+
+
+// ============ Объект функции, NFE ===================
+
+
+// function makeCounter() {
+//    let count = 0;
+
+//    function counter() {
+//       return count++;
+//    }
+//    counter.set = value => count = value;
+//    counter.decrease = () => count--;
+
+//    return counter;
+// }
+
+
+// let counter = makeCounter();
+
+// alert(counter()); // 0
+// alert(counter()); // 1
+
+// counter.set(10); // установить новое значение счётчика
+
+// alert(counter()); // 10
+
+// counter.decrease(); // уменьшить значение счётчика на 1
+
+// alert(counter()); // 10 (вместо 11)
+
+
+
+
+// =============== Планирование: setTimeout и setInterval ==================
+
+
+
+// let printNumbers = setInterval(function () {
+//    alert(234);
+// }, 1000);
+
+
+
+// let printNumbers = setTimeout(function func() {
+//    alert(234);
+//    printNumbers = setTimeout(func, 2000);
+// }, 2000);
+
+
+
+// =============== Декораторы и переадресация вызова, сall/apply ==================
+
+
+
+// function work(a, b) {
+//    alert(a + b); // произвольная функция или метод
+// }
+
+// function spy(func) {
+
+//    function wrapper(...args) {
+//       wrapper.calls.push(args);
+//       return func.apply(this, arguments);
+//    }
+
+//    wrapper.calls = [];
+
+//    return wrapper;
+// }
+
+// work = spy(work);
+
+// work(1, 2); // 3
+// work(4, 5); // 9
+
+// for (let args of work.calls) {
+//    alert('call:' + args.join()); // "call:1,2", "call:4,5"
+// }
+
+
+
+
+// =============== Прототипное наследование ====================
+
+
+
+
+// let head = {
+//    glasses: 1
+// };
+
+// let table = {
+//    pen: 3,
+//    __proto__: head
+// };
+
+// let bed = {
+//    sheet: 1,
+//    pillow: 2,
+//    __proto__: table
+// };
+
+// let pockets = {
+//    money: 2000,
+//    __proto__: bed
+// };
+
+// alert(pockets.pen);
+// alert(bed.glasses);
+
+
+
+
+// function Samurai(name) {
+//    this.name = name;
+// }
+
+// Samurai.prototype.hello = function () {
+//    alert(`I am ${this.name}`);
+// };
+
+// let smams = new Samurai('Vasa');
+// smams.hello();
+
+// let sams2 = new Samurai('Pete');
+// sams2.hello();
+
+
+
+
+
+
+
+// =============== Промисы ====================
+
+
+
+
+
+// console.log("fffffff");
+
+// let promises = new Promise((resolve, reject) => {
+//    setTimeout(() => {
+//       resolve(2);
+//       console.log('Нач знач- 2');
+//    }, 5000);
+// });
+
+// promises.then(result => {
+//    let promises2 = new Promise((resolve, reject) => {
+//       setTimeout(() => {
+//          result = result * 2;
+//          resolve(result);
+//       }, 5000);
+//    });
+
+//    promises2.then(result2 => {
+//       console.log(result2);
+//       let promises3 = new Promise((resolve, reject) => {
+//          setTimeout(() => {
+//             result2 = result2 * 2;
+//             resolve(result2);
+//          }, 5000);
+//       });
+//       promises3.then(resolve3 => {
+//          console.log(resolve3);
+//       });
+//    });
+// });
+
+
+
+
+
+
+// let promise = new Promise(function (resolve, reject) {
+//    setTimeout(() => resolve(1), 3000);
+// });
+
+// promise.then(function (result) {
+//    console.log(result);
+//    return result * 2;
+// }).then(function (result) {
+//    console.log(result);
+//    return result * 2;
+// }).then(function (result) {
+//    console.log(result);
+//    return result * 2;
+// }).then(function (result) {
+//    console.log(result);
+//    return result * 2;
+// });
+
+
+
+// console.log("fffffff");
+
+// let promises = new Promise((resolve, reject) => {
+//    setTimeout(() => {
+//       console.log('Нач знач- 2');
+//       resolve(2);
+//    }, 3000);
+// });
+
+// promises.then(result => {
+//       return new Promise((resolve, reject) => {
+//          setTimeout(() => {
+//             result *= 2;
+//             resolve(result);
+//          }, 0);
+//       });
+//    })
+//    .then(result => {
+//       console.log('tttttt1', result);
+//       return new Promise((resolve, reject) => {
+//          setTimeout(() => resolve(result * 2), 3000);
+//       });
+//    }).then(result => {
+//       console.log('tttttt2', result);
+//       return new Promise((resolve, reject) => {
+//          setTimeout(() => resolve(result * 2), 3000);
+//       });
+//    }).then(result => {
+//       console.log('ttttttt3', result);
+//       return new Promise((resolve, reject) => {
+//          setTimeout(() => resolve(result * 2), 3000);
+//       });
+//    }).then(result => {
+//       console.log('tttt4', result);
+//    });
