@@ -5,3 +5,5 @@ findNextSquare = (sq) => {
 };
 
 findNextSquare(121);
+findNextSquare(625);
+findNextSquare(114);

@@ -4,5 +4,5 @@ message = (str) => {
       .join(' ');
 };
 
-console.log(message('Этот сайт для неудачников LOL!'));
-console.log(message('This webste is for lusers LOL!'));
+message('Этот сайт для неудачников LOL!');
+message('This webste is for lusers LOL!');
