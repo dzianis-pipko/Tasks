@@ -5,11 +5,14 @@ printer_error = (str) => {
       if (key == false) arrErrors.push(key);
    }
    return `${arrErrors.length}/${strArr.length}`;
-};
+
+}
 
 printer_error('aaaxbbbbyyhwawiwjjjwwm');
 printer_error('aaabbbbhaijjjm');
 printer_error('aaabbbbhaijjjmnnnpqrstuzzzm');
+
+
 
 // abcdefghijklm
 // nopqrstuvwxyz
