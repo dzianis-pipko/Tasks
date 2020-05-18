@@ -1,14 +1,6 @@
-invert = (arr) => {
-   for (let i = 0; i < arr.length; i++) {
-      if (arr[i] < 0) {
-         arr[i] = arr[i] * -1;
-      } else {
-         arr[i] = arr[i] * -1;
-      }
-   }
-   return arr;
-};
+invertTwo = (arr) => arr
+   .map((item, index) => (arr[index] < 0) ? arr[index] = arr[index] * -1 : arr[index] = arr[index] * -1);
 
-invert([-1, -2, -4, -5]); //== [1,2,4,5]
-invert([1, 2, 4, 5]); //== [-1,-2,-4,-5]
-invert([1, -2, 4, -5]); //== [-1,2,-4,5]
+invertTwo([-1, -2, -4, -5]); //== [1,2,4,5]
+invertTwo([1, 2, 4, 5]); //== [-1,-2,-4,-5]
+invertTwo([1, -2, 4, -5]); //== [-1,2,-4,5]

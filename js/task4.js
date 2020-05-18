@@ -25,3 +25,16 @@ accumTwo = (str) => {
 accumTwo("abcd"); //-> "A-Bb-Ccc-Dddd"
 accumTwo("RqaEzty"); //-> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
 accumTwo("cwAt"); //-> "C-Ww-Aaa-Tttt"
+
+
+
+// Вариант 3
+
+accumThree = (str) => str
+   .split('')
+   .map(item => item.toUpperCase())
+   .reduce((curremt, next, index) => curremt + '-' + next + next.repeat(index).toLowerCase());
+
+accumThree("abcd"); //-> "A-Bb-Ccc-Dddd"
+accumThree("RqaEzty"); //-> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+accumThree("cwAt"); //-> "C-Ww-Aaa-Tttt"

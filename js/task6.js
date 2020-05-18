@@ -2,7 +2,7 @@ printer_error = (str) => {
    let strArr = str.split('').map((item) => (item > 'm') ? false : true);
    let arrErrors = [];
    for (let key of strArr) {
-      if (key == false) arrErrors.push(key);
+      if (!key) arrErrors.push(key);
    }
    return `${arrErrors.length}/${strArr.length}`;
 

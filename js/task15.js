@@ -1,13 +1,7 @@
 functSort = (str) => {
-   let b = [];
-   str.split(' ').forEach((item) => {
-      for (let i in item) {
-         if (parseInt(item[i])) {
-            b.push(item[i]);
-         }
-      }
+   return str.split(' ').forEach((item) => {
+
    });
-   return `${b} ---- ${str}`;
 };
 
 
