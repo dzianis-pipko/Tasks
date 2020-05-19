@@ -8,12 +8,10 @@
 //    return a.join('').toLowerCase();
 // };
 
-const solution = (str) => {
-   return str
-      .split('')
-      .map(item => (item == item.toUpperCase()) ? '_' + item.toLowerCase() : item)
-      .join('');
-};
+const solution = (str) => str
+   .split('')
+   .map(item => (item == item.toUpperCase()) ? '_' + item.toLowerCase() : item)
+   .join('');
 
 console.log(solution("redevCourses")); //-> "redev_courses"
 console.log(solution("redevCoursesApp"));
