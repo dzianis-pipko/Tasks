@@ -3,5 +3,5 @@ const palindrom = (str) => {
    return (a == str) ? `${str} => true` : `${str} => false`;
 };
 
-console.log(palindrom('abcdcdcba'));
-console.log(palindrom('hello'));
+palindrom('abcdcdcba');
+palindrom('hello');
