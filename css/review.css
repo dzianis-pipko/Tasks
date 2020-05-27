@@ -1,0 +1,54 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+}
+.review {
+   padding-top: 60px;
+   padding-bottom: 60px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+}
+.review__title {
+   font-size: 50px;
+   font-weight: bold;
+   margin: 0;
+   margin-bottom: 120px;
+   text-align: center;
+}
+.review__image {
+   width: 190px;
+   height: 190px;
+   display: block;
+   border-radius: 50%;
+   margin-bottom: 50px;
+}
+.review__wrapper-description {
+   width: 100%;
+   max-width: 850px;
+   margin-bottom: 50px;
+}
+.review__description {
+   font-size: 26px;
+   font-weight: normal;
+   text-align: center;
+   margin: 0;
+}
+.review__wrapper-name {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.review__name {
+   font-size: 32px;
+   font-weight: bold;
+   margin: 0;
+   margin-bottom: 20px;
+}
+.review__student {
+   font-size: 22px;
+   margin: 0;
+}
